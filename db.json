@@ -1,14 +1,74 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+"rows": [{
+	"parentName": "Things",
+	"name": "DemoThing2",
+	"description": ,
+	"id": "DemoThing2 #Thing",
+	"type": "Thing",
+	"parentType": "Things"
+}, {
+	"parentName": "Things",
+	"name": "DemoThing",
+	"description": ,
+	"id": "DemoThing #Thing",
+	"type": "Thing",
+	"parentType": "Things"
+}, {
+	"parentName": "DataShapes",
+	"name": "demoDS",
+	"description": ,
+	"id": "demoDS #DataShape",
+	"type": "DataShape",
+	"parentType": "DataShapes"
+}], 
+"dataShape": {
+	"fieldDefinitions": {
+		"parentName": {
+			"name": "parentName",
+			"aspects": {},
+			"description": "Parent name",
+			"baseType": "STRING",
+			"ordinal": 0
+		},
+		"name": {
+			"name": "name",
+			"aspects": {
+				"isPrimaryKey": true
+			},
+			"description": "Entity name(or id)",
+			"baseType": "STRING",
+			"ordinal": 0
+		},
+		"description": {
+			"name": "description",
+			"aspects": {},
+			"description": "Entity description",
+			"baseType": "STRING",
+			"ordinal": 0
+		},
+		"id": {
+			"name": "id",
+			"aspects": {},
+			"description": "Entity id",
+			"baseType": "STRING",
+			"ordinal": 0
+		},
+		"type": {
+			"name": "type",
+			"aspects": {
+				"isPrimaryKey": true
+			},
+			"description": "Entity type",
+			"baseType": "STRING",
+			"ordinal": 0
+		},
+		"parentType": {
+			"name": "parentType",
+			"aspects": {},
+			"description": "Parent type",
+			"baseType": "STRING",
+			"ordinal": 0
+		}
+	}
+}
 }
